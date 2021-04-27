@@ -121,7 +121,6 @@ async function setup(hubspotClient, dbConnection) {
 
   // Drop all first
   for (const table of tables) {
-    console.log("DROP TABLE IF EXISTS `" + table.name + "`");
     await dbConnection.run("DROP TABLE IF EXISTS `" + table.name + "`");
   }
 

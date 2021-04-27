@@ -193,15 +193,6 @@ async function sql(query, dbConnection, opts, other) {
     driver: sqlite3.Database,
   });
 
-  // await setup(hubspotClient, db);
-
-  // program
-  //   .command("sql <query> ")
-  //   .option("-d, --debug", "output extra debugging")
-  //   .option("-s, --small", "small pizza size")
-  //   .option("-p, --pizza-type <type>", "flavour of pizza");
-  // .option("-s, --setup", "cleanup and import from HubDB tables")
-  //     .action(() => setup(hubspotClient, db))
   program
     .arguments("<query>")
     .option("-o, --output <format>", "output as csv")

@@ -1,6 +1,10 @@
 # what?
 
-I'm working with some fairly verbose hubdb tables so I needed a way of quickly exporting a set of records. I know SQL, so why not just dump it into SQL lite and provide a little CLI. You can also open the .db file in a SQL lite browser.
+I'm working with some fairly verbose hubdb tables and I needed a more efficent way of working with the data/exporting data.
+
+This simply creates a SQLlite table from your data and allows you to query it via the cli.
+
+Currently it exports all tables from your portal. If you have PII be careful and make sure you cleanup/dont use this tool.
 
 1. create a .env file based on .env.example with your API key
 2. run the intial setup (pulls all hubdb tables down, so try not to do this yet if you have PII in your hubdb tables)
